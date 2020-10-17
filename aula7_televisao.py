@@ -18,19 +18,23 @@ class Televisao:
         if self.ligada:
             self.canal -= 1
 
-televisao = Televisao()
-print('Televisão está ligada: {}'.format(televisao.ligada))
-televisao.power()
-print('Televisão está ligada: {}'.format(televisao.ligada))
-televisao.power()
-print('Televisão está ligada: {}'.format(televisao.ligada))
+# print(__name__)
+# Só executa se quando quem tiver chamando for o mesmo arquivo
+# Quando executamos o próprio arquivo, o "__name__" é "__main__"
+if __name__ == "__main__":
+    televisao = Televisao()
+    print('Televisão está ligada: {}'.format(televisao.ligada))
+    televisao.power()
+    print('Televisão está ligada: {}'.format(televisao.ligada))
+    televisao.power()
+    print('Televisão está ligada: {}'.format(televisao.ligada))
 
-televisao.power()
-print('Televisão está ligada: {}'.format(televisao.ligada))
+    televisao.power()
+    print('Televisão está ligada: {}'.format(televisao.ligada))
 
-print('Canal: {}'.format(televisao.canal))
-televisao.aumenta_canal()
-televisao.aumenta_canal()
-print('Canal: {}'.format(televisao.canal))
-televisao.diminui_canal()
-print('Canal: {}'.format(televisao.canal))
+    print('Canal: {}'.format(televisao.canal))
+    televisao.aumenta_canal()
+    televisao.aumenta_canal()
+    print('Canal: {}'.format(televisao.canal))
+    televisao.diminui_canal()
+    print('Canal: {}'.format(televisao.canal))
