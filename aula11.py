@@ -13,10 +13,10 @@ try:
 # Encadeamento de except
 except ZeroDivisionError:
     print("Não é possível realizar uma divisão por zero")
-except ArithmeticError:
-    print("Houve um erro ao executar uma operação eritmética")
 except ZeroDivisionError:
     print("Não é possível realizar uma divisão por 0!")
+except ArithmeticError:
+    print("Houve um erro ao executar uma operação eritmética")
 except IndexError:
     print("Erro ao acessar um índice inválido da lista")
 except Exception as ex:
